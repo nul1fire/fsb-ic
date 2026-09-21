@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Информационный центр ФСБ</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cpath%20d='M32%204%2056%2012v20c0%2014-10%2024-24%2028C18%2056%208%2046%208%2032V12z'%20fill='%23c9a86a'/%3E%3Cpath%20d='M32%2018l4.7%209.5%2010.5%201.5-7.6%207.4%201.8%2010.4L32%2041.9l-9.4%204.9%201.8-10.4-7.6-7.4%2010.5-1.5z'%20fill='%2314181c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-box">
+    <div class="loader-badge">
+      <svg viewBox="0 0 64 64" class="emblem-svg"><path d="M32 4 56 12v20c0 14-10 24-24 28C18 56 8 46 8 32V12z" fill="#14181c"/><path d="M32 18l4.7 9.5 10.5 1.5-7.6 7.4 1.8 10.4L32 41.9l-9.4 4.9 1.8-10.4-7.6-7.4 10.5-1.5z" fill="#c9a86a"/></svg>
+    </div>
+    <div class="loader-title">ИНФОРМАЦИОННЫЙ ЦЕНТР ФСБ</div>
+    <div class="loader-sub">RMRP &nbsp;|&nbsp; Кутузовский округ</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-status" id="loader-status">подготовка базы</div>
+  </div>
+</div>
+
+<div id="app">
+  <header id="titlebar">
+    <div class="tb-badge">
+      <svg viewBox="0 0 64 64" class="emblem-svg"><path d="M32 4 56 12v20c0 14-10 24-24 28C18 56 8 46 8 32V12z" fill="#14181c"/><path d="M32 18l4.7 9.5 10.5 1.5-7.6 7.4 1.8 10.4L32 41.9l-9.4 4.9 1.8-10.4-7.6-7.4 10.5-1.5z" fill="#c9a86a"/></svg>
+    </div>
+    <div class="tb-center">
+      <div class="tb-title">ИНФОРМАЦИОННЫЙ ЦЕНТР ФСБ</div>
+      <div class="tb-sub">RMRP&nbsp;&nbsp;|&nbsp;&nbsp;Кутузовский ФСБ</div>
+    </div>
+    <div class="tb-buttons"></div>
+  </header>
+  <div class="accent-line"></div>
+  <div id="layout">
+    <aside id="sidebar"></aside>
+    <main id="content">
+      <div id="searchbar">
+        <input id="search" type="text" placeholder="Поиск: номер статьи, ключевое слово, тег..." autocomplete="off">
+        <span id="counter"></span>
+      </div>
+      <div id="feed"></div>
+    </main>
+  </div>
+  <footer id="statusbar"><span id="status"></span></footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
